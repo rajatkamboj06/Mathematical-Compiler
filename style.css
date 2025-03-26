@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-panel {
+    flex: 1;
+    background-color: #282c34;
+    color: #abb2bf;
+    padding: 20px;
+    overflow-y: auto;
+    border-right: 2px solid #181a1f;
+}
+
+.right-panel {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    color: #61afef;
+    border-bottom: 1px solid #3e4451;
+    padding-bottom: 10px;
+}
+
+.function-list {
+    margin-top: 20px;
+}
+
+.function-group {
+    margin-bottom: 30px;
+}
+
+.function-group h3 {
+    color: #e06c75;
+    margin-bottom: 10px;
+}
+
+.function-item {
+    background-color: #2c313a;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border-left: 3px solid #3e4451;
+    font-size: 14px;
+    white-space: pre-wrap;
+}
+
+.function-item:hover {
+    background-color: #3e4451;
+    border-left: 3px solid #61afef;
+}
+
+.io-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea, input, button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+#functionInput {
+    width: 100%;
+}
+
+#executeBtn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#executeBtn:hover {
+    background-color: #218838;
+}
+
+#output {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    flex-grow: 1;
+    border-radius: 4px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+}
+
+.var-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.var-container input {
+    flex: 1;
+}
+
+.var-container button {
+    width: 40px;
+    background-color: #dc3545;
+    color: white;
+}
+
+#addVarBtn {
+    background-color: #17a2b8;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.keyword {
+    color: #c678dd;
+}
+
+.type {
+    color: #61afef;
+}
+
+.comment {
+    color: #5c6370;
+    font-style: italic;
+}

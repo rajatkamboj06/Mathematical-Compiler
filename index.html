@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mathematical Compiler</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h2>Available Mathematical Functions</h2>
+            <div class="function-list" id="functionList">
+            </div>
+        </div>
+        
+        <div class="right-panel">
+            <h2>Function Compiler</h2>
+            <div class="io-container">
+                <textarea id="functionInput" placeholder="Enter your function call here, e.g.: add(5, 3)"></textarea>
+                
+                <h3>Variables</h3>
+                <div id="variableContainer">
+                    <div class="var-container">
+                        <input type="text" placeholder="Variable name" class="var-name">
+                        <input type="text" placeholder="Value" class="var-value">
+                        <button class="remove-var">×</button>
+                    </div>
+                </div>
+                <button id="addVarBtn">+ Add Variable</button>
+                
+                <button id="executeBtn">Execute Function</button>
+                <div id="output">Results will appear here...</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
