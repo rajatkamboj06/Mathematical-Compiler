@@ -320,3 +320,7 @@ defaultVars.forEach(v => {
 
 // Add example function call
 functionInput.value = 'add(x, y)';
+
+document.getElementById('threeAddressBtn').addEventListener('click', () => {
+    window.location.href = 'three_address.html'; // Replace with actual page path if different
+});
